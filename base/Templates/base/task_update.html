@@ -1,0 +1,11 @@
+{% extends 'base/template.html' %}
+{% block content %}
+<div class="header-bar">
+    <a href="{% url 'tasks' %}"> &#10094; </a>
+</div>
+<form method="post" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="button" type="submit">Update</button>
+</form>
+{% endblock content %}
