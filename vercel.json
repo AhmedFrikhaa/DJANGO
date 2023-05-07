@@ -8,5 +8,11 @@
   ],
      "env": {
     "DJANGO_SETTINGS_MODULE": "mysite.settings"
-     }
+     },
+    "builds": [
+    {
+      "src": "mysite/wsgi.py",
+      "use": "@now/python"
+    }
+    ]
 }
