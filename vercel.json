@@ -1,18 +1,3 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/mysite/wsgi.py"
-    }
-  ],
-     "env": {
-    "DJANGO_SETTINGS_MODULE": "mysite.settings"
-     },
-    "builds": [
-    {
-      "src": "mysite/wsgi.py",
-      "use": "@now/python"
-    }
-    ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
 }
